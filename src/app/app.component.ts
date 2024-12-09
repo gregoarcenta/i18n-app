@@ -1,8 +1,13 @@
 import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [],
-  template: ` <h1 class="text-3xl font-bold underline">Hello world!</h1> `,
+  imports: [RouterOutlet],
+  template: `
+    <div class="max-w-screen-xl mx-auto">
+      <router-outlet />
+    </div>
+  `,
 })
 export class AppComponent {}
