@@ -38,9 +38,18 @@ importers:
       '@angular/ssr':
         specifier: ^19.0.4
         version: 19.0.4(f7n6izbky7fl2eflezc2nurhxi)
+      '@ngx-translate/core':
+        specifier: ^16.0.3
+        version: 16.0.3(@angular/common@19.0.3(@angular/core@19.0.3(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.0.3(rxjs@7.8.1)(zone.js@0.15.0))
+      '@ngx-translate/http-loader':
+        specifier: ^16.0.0
+        version: 16.0.0(@angular/common@19.0.3(@angular/core@19.0.3(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.0.3(rxjs@7.8.1)(zone.js@0.15.0))
       express:
         specifier: ^4.18.2
         version: 4.21.2
+      ngx-cookie-service-ssr:
+        specifier: ^19.0.0
+        version: 19.0.0(@angular/common@19.0.3(@angular/core@19.0.3(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.0.3(rxjs@7.8.1)(zone.js@0.15.0))(@angular/ssr@19.0.4(f7n6izbky7fl2eflezc2nurhxi))
       rxjs:
         specifier: ~7.8.0
         version: 7.8.1
@@ -1518,6 +1527,18 @@ packages:
       '@angular/compiler-cli': ^19.0.0
       typescript: '>=5.5 <5.7'
       webpack: ^5.54.0
+
+  '@ngx-translate/core@16.0.3':
+    resolution: {integrity: sha512-UPse66z9tRUmIpeorYodXBQY6O4foUmj9jy9cCuuja7lqdOwRBWPzCWqc+qYIXv5L2QoqZdxgHtqoUz+Q9weSA==}
+    peerDependencies:
+      '@angular/common': '>=16'
+      '@angular/core': '>=16'
+
+  '@ngx-translate/http-loader@16.0.0':
+    resolution: {integrity: sha512-l3okOHGVxZ1Bm55OpakSfXvI2yYmVmhYqgwGU4aIQIRUqpkBCrSDZnmrHTcZfsGJzXKB5E2D2rko9i28gBijmA==}
+    peerDependencies:
+      '@angular/common': '>=16'
+      '@angular/core': '>=16'
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -3572,6 +3593,13 @@ packages:
 
   neo-async@2.6.2:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
+
+  ngx-cookie-service-ssr@19.0.0:
+    resolution: {integrity: sha512-t6z3eePPfJvwVsOGsEFADIJzWLFfeSCCX93LyygU+VWAZBlKSWmy/TGS4Pq7h+ZdDN5h15qw7RJ66bVsM+LM8Q==}
+    peerDependencies:
+      '@angular/common': ^19.0.0
+      '@angular/core': ^19.0.0
+      '@angular/ssr': ^19.0.0
 
   node-addon-api@6.1.0:
     resolution: {integrity: sha512-+eawOlIgy680F0kBzPUNFhMZGtJ1YmqM6l4+Crf4IkImjYrO/mqPwRMh352g23uIaQKFItcQ64I7KMaJxHgAVA==}
@@ -6277,6 +6305,18 @@ snapshots:
       typescript: 5.6.3
       webpack: 5.96.1(esbuild@0.24.0)
 
+  '@ngx-translate/core@16.0.3(@angular/common@19.0.3(@angular/core@19.0.3(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.0.3(rxjs@7.8.1)(zone.js@0.15.0))':
+    dependencies:
+      '@angular/common': 19.0.3(@angular/core@19.0.3(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1)
+      '@angular/core': 19.0.3(rxjs@7.8.1)(zone.js@0.15.0)
+      tslib: 2.8.1
+
+  '@ngx-translate/http-loader@16.0.0(@angular/common@19.0.3(@angular/core@19.0.3(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.0.3(rxjs@7.8.1)(zone.js@0.15.0))':
+    dependencies:
+      '@angular/common': 19.0.3(@angular/core@19.0.3(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1)
+      '@angular/core': 19.0.3(rxjs@7.8.1)(zone.js@0.15.0)
+      tslib: 2.8.1
+
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
       '@nodelib/fs.stat': 2.0.5
@@ -8523,6 +8563,13 @@ snapshots:
   negotiator@1.0.0: {}
 
   neo-async@2.6.2: {}
+
+  ngx-cookie-service-ssr@19.0.0(@angular/common@19.0.3(@angular/core@19.0.3(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1))(@angular/core@19.0.3(rxjs@7.8.1)(zone.js@0.15.0))(@angular/ssr@19.0.4(f7n6izbky7fl2eflezc2nurhxi)):
+    dependencies:
+      '@angular/common': 19.0.3(@angular/core@19.0.3(rxjs@7.8.1)(zone.js@0.15.0))(rxjs@7.8.1)
+      '@angular/core': 19.0.3(rxjs@7.8.1)(zone.js@0.15.0)
+      '@angular/ssr': 19.0.4(f7n6izbky7fl2eflezc2nurhxi)
+      tslib: 2.8.1
 
   node-addon-api@6.1.0:
     optional: true
