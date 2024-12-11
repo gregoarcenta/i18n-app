@@ -1,5 +1,5 @@
 <p class="mt-10">Select Language</p>
-<select [value]="currentLang()" (change)="changeLanguage($event)">
+<select [formControl]="selectLangForm" (change)="changeLanguage($event)">
   @for (lang of languages(); track lang.code) {
     <option [value]="lang.code">{{ lang.code }} {{ lang.flag }}</option>
   }
